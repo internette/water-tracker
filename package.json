@@ -1,0 +1,46 @@
+{
+  "name": "water-tracker",
+  "version": "1.0.0",
+  "description": "A small, unobstrustive water tracking app that syncs with your Fitbit and Apple Water and allows you to quickly log your water from your desk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twaffl3s/water-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twaffl3s/water-tracker/issues"
+  },
+  "homepage": "https://github.com/twaffl3s/water-tracker#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "electron": "^1.6.6",
+    "electron-builder": "^19.5.1",
+    "electron-packager": "^8.7.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "electron-config": "^0.2.1",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.9",
+    "react": "^15.5.4",
+    "react-custom-scrollbars": "^4.1.1",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-electron-ipc": "^1.1.9",
+    "webpack": "^2.4.1"
+  }
+}
