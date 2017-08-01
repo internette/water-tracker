@@ -2,15 +2,26 @@
   "name": "water-tracker",
   "version": "1.0.0",
   "description": "A small, unobstrustive water tracking app that syncs with your Fitbit and Apple Water and allows you to quickly log your water from your desk.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "main.js",
+  "author": {
+    "name": "Antoinette Janus",
+    "email": "antoinette.c.janus@gmail.com",
+    "url": "https://acjanus.co"
+  },
+   "scripts": {
+    "dev:build-watch": "webpack --watch --progress --debug",
+    "dev:build": "webpack --progress",
+    "app:launch": "electron .",
+    "app:launch:test:osx": "export ELECTRON_ENABLE_LOGGING=true && electron .",
+    "app:launch:test:windows": "set ELECTRON_ENABLE_LOGGING=true && electron .",
+    "pack": "build --dir",
+    "dist:format-only": "build --prepackaged ./dist",
+    "dist": "build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twaffl3s/water-tracker.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/twaffl3s/water-tracker/issues"
