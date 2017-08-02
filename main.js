@@ -29,7 +29,7 @@ const createWindow = () => {
     minHeight: 200,
     frame: false,
     transparent: true,
-    alwaysOnTop: isOnTop
+    alwaysOnTop: keepOnTop
   })
   mainWindow.setResizable(false);
   mainWindow.loadURL(url.format({
@@ -52,11 +52,11 @@ app.on('ready', () => {
     if (process.platform === 'darwin') {
       extension_path = path.join('/Users', 'acjanus', 'Library', 'Application Support',
         'Google', 'Chrome', 'Default', 'Extensions', 'fmkadmapgofadopljbjfkapdkoienihi',
-        '2.1.9_0')
+        '2.5.0_0')
     } else {
       extension_path = path.join('C:', 'Users', 'Antoinette', 'AppData',
         'Local', 'Google', 'Chrome', 'User Data', 'Default', 'Extensions',
-        'fmkadmapgofadopljbjfkapdkoienihi', '2.1.9_0')
+        'fmkadmapgofadopljbjfkapdkoienihi', '2.5.0_0')
     }
     BrowserWindow.addDevToolsExtension(
       extension_path
