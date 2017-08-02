@@ -5,7 +5,7 @@ import UpdateButtonPresenter from '../components/update-button-presenter.js'
 const mapStateToProps = (state, ownProps) => {
   console.log(state)
   return {
-    btn_text: state.formActions.btn_text ? state.formActions.btn_text : ''
+    btn_text: ownProps.btn_text ? ownProps.btn_text : ''
   }
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
